@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <h1>
+        Give me numbers to play...
+    </h1>
+    <div class="calculator">
+        <form action="">
+            <div class="display">
+                <input type="text" name="view"  class="view display">
+            </div>
+            <div class="buttons">
+                <div>
+                    <input id="red" class="button red" type="button" value="AC" onclick="view.value =''">
+                    <input id="red" class="button red" type="button" value="DEL" onclick="view.value =view.value.toString().slice(0,-1)">
+                    <input id="yellow" class="button" type="button" value="/" onclick="view.value +='/'">
+                    <input id="yellow" class="button" type="button" value="*" onclick="view.value +='*'">
+                </div>
+                <div>
+                    <input class="button" type="button" value="7" onclick="view.value +='7'">
+                    <input class="button" type="button" value="8" onclick="view.value +='8'">
+                    <input class="button" type="button" value="9" onclick="view.value +='9'">
+                    <input id="yellow" class="button" type="button" value="-" onclick="view.value +='-'">
+                </div>
+                <div >
+                    <input class="button" type="button" value="4" onclick="view.value +='4'">
+                    <input class="button" type="button" value="5" onclick="view.value +='5'">
+                    <input class="button" type="button" value="6" onclick="view.value +='6'">
+                    <input id="yellow" class="button " type="button" value="+" onclick="view.value +='+'">
+                </div>
+                <div>
+                    <input class="button" type="button" value="1" onclick="view.value +='1'">
+                    <input class="button" type="button" value="2" onclick="view.value +='2'">
+                    <input class="button" type="button" value="3" onclick="view.value +='3'">
+                    <input id="green" class="button" type="button" value="=" onclick="view.value=eval(view.value)" >
+                </div>
+                <div>
+                    <input class="button" type="button" value="00" onclick="view.value +='00'">
+                    <input class="button" type="button" value="0" onclick="view.value +='0'">
+                    <input class="button" type="button" value="." onclick="view.value +='.'">
+                    <input id="red" class="button " type="button" value="AC" onclick="view.value =''">
+
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
