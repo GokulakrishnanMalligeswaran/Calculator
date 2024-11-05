@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+h1{
+    position:absolute;
+    top:0px;
+}
+#equal{
+    height:100px
+}
+.calculator{
+    background-color: rgba(0, 0, 139, 0.818);
+    width:300px;
+    height:70vh;
+    padding:20px;
+    border-radius:20px;
+    margin:75px
+}
+.buttons div input{
+    width:60px;
+    height:60px;
+    border-radius: 50px;
+    color:white;
+    background-color: rgba(0, 0, 139, 0.836);
+    border:3px solid white;
+    margin:3px;
+    font-size: 20px;
+    text-align: center;
+}
+.buttons{
+    display:flex;
+    flex-direction:column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.buttons div{
+    padding:10px 7px;
+    border:none;
+    box-shadow: yellow;
+}
+.view{
+    align-self: center;
+    padding-bottom: 20px;
+    width:90%;
+    height:70px;
+    border-spacing: 20px;
+    padding: 10px 10px 10px 10px;
+    color:black;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.display{
+    color: black;
+}
+.button:hover{
+    background-color: white;
+    color:rgba(0, 0, 139, 0.836);
+    transition:1s;
+    cursor:pointer;
+    border-color:rgba(0, 0, 139, 0.836);
+    font-size:"8px";
+    font-weight: none;
+}
+#red{
+    background-color: red;
+    color:yellow
+}
+#green{
+    background-color: greenyellow;
+    color:black;
+}
+#yellow{
+    background-color: yellow;
+    color:black
+}
